@@ -1,5 +1,6 @@
 package com.crunglers.speedcheckers;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
@@ -9,10 +10,12 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-public class selectFragment extends Fragment {
+public class StartFragment extends Fragment {
 
-    public selectFragment() {
-        super(R.layout.fragment_select);
+    Fragment selectFragment = new SelectFragment();
+
+    public StartFragment() {
+        super(R.layout.fragment_start);
     }
 
     @Override
@@ -23,32 +26,25 @@ public class selectFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle args) {
         super.onCreateView(inflater, container, args);
-
-        View view = inflater.inflate(R.layout.fragment_select, container, false);
+        View view = inflater.inflate(R.layout.fragment_start, container, false);
         TransitionInflater tInflater = TransitionInflater.from(requireContext());
-        setEnterTransition(tInflater.inflateTransition(R.transition.slide_right));
+        setExitTransition(tInflater.inflateTransition(R.transition.slide_left));
 
-        view.findViewById(R.id.HostSelect).setOnClickListener( v -> {
+        view.findViewById(R.id.startButton).setOnClickListener( v -> {
             getParentFragmentManager().beginTransaction()
                     .setCustomAnimations(
                             R.anim.slide_in,
                             R.anim.slide_out
                     )
-                    .replace(R.id.startFragment, new hostGameFragment())
+                    .replace(R.id.startFragment, selectFragment)
                     .addToBackStack(null)
                     .commit();
         });
 
-        view.findViewById(R.id.FindSelect).setOnClickListener( v -> {
-            getParentFragmentManager().beginTransaction()
-                    .setCustomAnimations(
-                            R.anim.slide_in,
-                            R.anim.slide_out
-                    )
-                    .replace(R.id.startFragment, new findGameFragment())
-                    .addToBackStack(null)
-                    .commit();
-        });
+        view.findViewById(R.id.testButton).setOnClickListener( v -> {
+            Intent i = new Intent(getContext(), GameActivity.class);
+            startActivity(i);
+        } );
 
         return view;
     }

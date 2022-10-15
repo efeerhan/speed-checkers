@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".startActivity">
+    tools:context=".StartActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <androidx.fragment.app.FragmentContainerView
-        android:name="com.crunglers.speedcheckers.startFragment"
+        android:name="com.crunglers.speedcheckers.StartFragment"
         android:id="@+id/startFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

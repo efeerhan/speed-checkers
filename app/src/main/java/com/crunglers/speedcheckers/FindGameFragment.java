@@ -9,10 +9,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-public class hostGameFragment extends Fragment {
+public class FindGameFragment extends Fragment {
 
-    public hostGameFragment() {
-        super(R.layout.fragment_host_game);
+
+    public FindGameFragment() {
+        super(R.layout.fragment_find_game);
     }
 
     @Override
@@ -23,10 +24,10 @@ public class hostGameFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle args) {
         super.onCreateView(inflater, container, args);
-        View view = inflater.inflate(R.layout.fragment_host_game, container, false);
+        View view = inflater.inflate(R.layout.fragment_find_game, container, false);
         TransitionInflater tInflater = TransitionInflater.from(requireContext());
         setExitTransition(tInflater.inflateTransition(R.transition.slide_left));
-
+        setEnterTransition(tInflater.inflateTransition(R.transition.slide_right));
 
         return view;
     }

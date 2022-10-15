@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Speedcheckers">
         <activity
-            android:name=".gameActivity"
+            android:name=".GameActivity"
             android:exported="true" />
         <activity
-            android:name=".startActivity"
+            android:name=".StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
