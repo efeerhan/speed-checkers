@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Speedcheckers">
         <activity
             android:name=".gameActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".startActivity"
             android:exported="true">
