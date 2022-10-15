@@ -7,11 +7,12 @@
     tools:context=".startActivity">
 
     <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <androidx.fragment.app.FragmentContainerView
         android:name="com.crunglers.speedcheckers.startFragment"
-        android:id="@+id/fooFragment"
+        android:id="@+id/startFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     </FrameLayout>

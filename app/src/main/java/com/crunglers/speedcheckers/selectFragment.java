@@ -28,10 +28,26 @@ public class selectFragment extends Fragment {
         TransitionInflater tInflater = TransitionInflater.from(requireContext());
         setEnterTransition(tInflater.inflateTransition(R.transition.slide_right));
 
-        view.findViewById(R.id.SynonymSelect).setOnClickListener( v -> {
+        view.findViewById(R.id.HostSelect).setOnClickListener( v -> {
+            getParentFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in,
+                            R.anim.slide_out
+                    )
+                    .replace(R.id.startFragment, new hostGameFragment())
+                    .addToBackStack(null)
+                    .commit();
         });
 
-        view.findViewById(R.id.HomonymSelect).setOnClickListener( v -> {
+        view.findViewById(R.id.FindSelect).setOnClickListener( v -> {
+            getParentFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in,
+                            R.anim.slide_out
+                    )
+                    .replace(R.id.startFragment, new findGameFragment())
+                    .addToBackStack(null)
+                    .commit();
         });
 
         return view;

@@ -9,12 +9,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-public class startFragment extends Fragment {
+public class findGameFragment extends Fragment {
 
-    Fragment selectFragment = new selectFragment();
 
-    public startFragment() {
-        super(R.layout.fragment_start);
+    public findGameFragment() {
+        super(R.layout.fragment_find_game);
     }
 
     @Override
@@ -25,20 +24,9 @@ public class startFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle args) {
         super.onCreateView(inflater, container, args);
-        View view = inflater.inflate(R.layout.fragment_start, container, false);
+        View view = inflater.inflate(R.layout.fragment_find_game, container, false);
         TransitionInflater tInflater = TransitionInflater.from(requireContext());
         setExitTransition(tInflater.inflateTransition(R.transition.slide_left));
-
-        view.findViewById(R.id.startButton).setOnClickListener( v -> {
-            getParentFragmentManager().beginTransaction()
-                    .setCustomAnimations(
-                            R.anim.slide_in,
-                            R.anim.slide_out
-                    )
-                    .replace(R.id.startFragment, selectFragment)
-                    .addToBackStack(null)
-                    .commit();
-        });
 
         return view;
     }
