@@ -7,11 +7,28 @@
     tools:context=".GameActivity">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Seconds: 10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/boardMaster"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
@@ -19,41 +36,64 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
 
 
 
@@ -63,41 +103,64 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
 
         </LinearLayout>
         <LinearLayout
@@ -105,41 +168,66 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -147,41 +235,64 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
 
         </LinearLayout>
         <LinearLayout
@@ -189,41 +300,66 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -231,41 +367,64 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
 
         </LinearLayout>
         <LinearLayout
@@ -273,41 +432,66 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -315,43 +499,67 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="8"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:weightSum="8">
 
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_white"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
+
             <com.crunglers.speedcheckers.Cell
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"/>
+                android:layout_width="40dp"
+                android:background="@drawable/square_black"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </com.crunglers.speedcheckers.Cell>
 
         </LinearLayout>
+
 
     </LinearLayout>
 
