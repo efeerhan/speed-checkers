@@ -1,7 +1,6 @@
 package com.crunglers.speedcheckers;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class gameActivity extends AppCompatActivity {

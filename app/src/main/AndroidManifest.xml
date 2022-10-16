@@ -13,13 +13,18 @@
             android:name=".gameActivity"
             android:exported="true" />
         <activity
-            android:name=".startActivity"
+            android:name=".firebase.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>r
+        <activity
+            android:name=".firebase.RegisterActivity"
+            android:parentActivityName=".firebase.LoginActivity">
+        </activity>
+        <activity android:name=".firebase.HomeActivity">
         </activity>
     </application>
 
